@@ -105,7 +105,7 @@ onMounted(async () => {
         timeLimit: q.timeLimit || 0,
         answers: (q.options || []).map(a => ({
           text: a.text,
-          isCorrect: false
+          isCorrect: a.isCorrect || false
         }))
       }))
     }
